@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attack server</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 class="main-headline">Missiles Data</h1>
+    <div class="container">
+        <div class="item">
+            <div class="title" id="missilesLineTitle">Missiles Line</div>
+            <div id="missilesLine"></div>
+        </div>
+        <div class="item">
+            <div class="title" id="successMissileDisplayTitle">Success Missile Display</div>
+            <div id="successMissileDisplay"></div>
+        </div>
+        <div class="item">
+            <div class="title" id="missilesOnTheAirTitle">Missiles On The Air</div>
+            <div id="missilesOnTheAir"></div>
+        </div>
+        <div class="item">
+            <div class="title" id="failureMissileDisplayTitle">Failure Missile Display</div>
+            <div id="failureMissileDisplay"></div>
+        </div>
+    </div>
+    <audio id="failureSound" src="bomb-drop1.mp3"></audio>
+    <audio id="MissilesInTheAir" src="missilsOnTheAirSound.mp3"></audio>
+    <audio id="SuccessSound" src="clappingSound.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>

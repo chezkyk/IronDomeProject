@@ -1,0 +1,74 @@
+body {
+    background-color: #2e2e2e; /* Dark background for military theme */
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.main-headline {
+    color: #d4af37; /* Gold color for headline */
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px; /* Remove gap to make squares larger */
+    width: 100vw;
+    height: calc(100vh - 150px); /* Adjust height to make squares fit */
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #f1f1f1;
+    text-align: center;
+    margin-bottom: 0; /* No margin to ensure tight placement above the square */
+    padding-top: 10px; /* Add padding for better spacing if needed */
+}
+
+#failureMissileDisplay,
+#successMissileDisplay,
+#missilesOnTheAir,
+#missilesLine {
+    border: 4px solid;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    background-color: transparent; /* No background color inside the square */
+}
+
+#failureMissileDisplay {
+    border-color: #c0392b; /* Dark red for failure */
+}
+
+#successMissileDisplay {
+    border-color: #27ae60; /* Dark green for success */
+}
+
+#missilesOnTheAir {
+    border-color: #2980b9; /* Dark blue for missiles in the air */
+}
+
+#missilesLine {
+    border-color: #f39c12; /* Dark orange for missiles line */
+}
